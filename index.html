@@ -35,7 +35,8 @@
 
 <script>
     request = new XMLHttpRequest;
-    request.open('GET', 'https://simple-data-vis-test-page.herokuapp.com/data/tree/tree_data.json', true);
+    //request.open('GET', 'https://simple-data-vis-test-page.herokuapp.com/data/tree/tree_data.json', true);
+    request.open('GET', 'https://www.internal.gfigfi.com/simple-data-vis-test-page/data/tree/tree_data.json', true);
     var newick = "";
     request.onload = function() {
         if (request.status >= 200 && request.status < 400){
